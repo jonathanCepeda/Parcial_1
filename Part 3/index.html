@@ -78,21 +78,27 @@ Deberia escribir en consola
 "Nombre: Fido , De color: Cafe , Raza: Poodle"
 
 
-var fido = new Dog {Nombre: 'Fido', Color: 'Cafe', Raza: 'Poodle'};
-var pibo = new Dog {Nombre: 'Pibo', Color: 'Cafe', Raza: 'Salchicha'};
-var Max = new Dog {Nombre: 'Max', Color: 'blanco', Raza: 'Cocker'};
+
+
+*/
+
+// CREA TU FUNCION printInfo() AQUI
+
+function Dog(Nombre, Color, Raza){
+    this.Nombre = Nombre;
+    this.Color = Color;
+    this.Raza = Raza;
+}
+
+var fido = new Dog('Fido', 'Cafe', 'Poodle');
+var pibo = new Dog('Pibo', 'Cafe', 'Salchicha');
+var Max = new Dog('Max',  'blanco', 'Cocker');
 
 function printInfo(){
     console.log(fido.Nombre);
     console.log(fido.Color);
     console.log(fido.Raza);
 }
-
-*/
-
-// CREA TU FUNCION printInfo() AQUI
-
-
 
 
 </script>
@@ -103,7 +109,7 @@ function printInfo(){
 
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
-    <button onclick="challenge3()">Challenge 2</button>
+    <button onclick="printInfo()">Challenge 2</button>
 
   
 <div id = "dummy">
